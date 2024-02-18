@@ -121,7 +121,7 @@ def Success_page(request):
 
 def Cancel_page(request,name):
     Details = Bill.objects.filter(name=name).delete()
-    Details = History.objects.filter(name=name).update(name=' {}(Canceled Item)'.format(name))
+    Details = History.objects.filter(name=name).update(name=' {}(CANCELED ITEM)'.format(name))
     user=name
     return redirect("Cart_New_page")
 
