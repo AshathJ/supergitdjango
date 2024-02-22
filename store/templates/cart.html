@@ -7,7 +7,7 @@
 </head>
 <body>
 <center>
-    <h1>Today's {{request.user}} Purchase</h1><td><button>Back to <a href="{% url 'Collection_page' user  %}">Collections</a></button></td>
+    <h1>Today {{request.user}}'s Purchase</h1><td><button>Back to <a href="{% url 'Collection_page' user  %}">Collections</a></button></td>
     <table >
         {% if request.user.is_authenticated %}
             <tr>
