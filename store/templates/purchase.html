@@ -15,7 +15,7 @@
                                 <h3>{{i.item_piece }}</h3>
                                 <h4>{{i.item_price}}.Rs</h4>
                                 <h4>{{i.Descriptive}}</h4>
-                                <button ><a href="{% url 'History_page' i.item_name i.item_price i.item_quantity request.user %}">Buy</a></button> 
+                                <button ><a href="{% url 'History_page' i.item_name i.item_price i.item_quantity request.user %}">Add Cart</a></button> 
                 {% endfor %}
 {% else %} 
 <h1>Please Login First</h1>
